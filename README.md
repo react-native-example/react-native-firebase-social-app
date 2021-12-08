@@ -1,7 +1,5 @@
 # React Native Firebase Social App
 
-This repository is based on my YouTube tutorial series where I'm creating a react native social app with Firebase.
-
 # Running on the local system 
 ```
 - clone the project using `git clone git@github.com:react-native-example/react-native-firebase-social-app.git`
