@@ -2,6 +2,36 @@
 
 This repository is based on my YouTube tutorial series where I'm creating a react native social app with Firebase.
 
+# Running on the local system 
+```
+- clone the project using `git clone git@github.com:react-native-example/react-native-firebase-social-app.git`
+- add `local.properties` in `android` folder using the `local.properties.sample` file and adjust the sdk location
+- generate the `google-services.json`  and put in the `android/app/` folder
+
+```
+ - now you can run  the project using the  `yarn start` and `yarn android` 
+ - you can generate the apk using `yarn release` command
+# generating the google-services.json
+
+```
+- go to the from `https://console.firebase.google.com/u/0/` 
+- create a project 
+- Go to the `android/app/build.gradle` and check the applicationId
+
+
+defaultConfig {
+        applicationId "com.socialapp"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+ 
+- create app using the `applicationId` used found in the above step. 
+- download the `google-services.json` file
+```
 ## Watch it on YouTube
 - [Onboarding UI in React Native](https://www.youtube.com/watch?v=SMkR-iIGvwQ)
 - [Login & Signup UI in React Native](https://www.youtube.com/watch?v=ZxP-0xbz5sg)
